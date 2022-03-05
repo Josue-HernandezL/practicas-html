@@ -1,0 +1,37 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+table,tr, td, th {
+    border: 1px solid black;
+}
+
+table {
+    text-align: center;
+}
+
+.direccion {
+    text-decoration: none;
+}
+
+.direccion:hover {
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    border-radius: 3px;
+}
+
+.telefono {
+    display: inline-block;
+    padding: 20px;
+    background-color: aquamarine;
+    color: black;
+    border-radius: 10px;
+    font-size: xx-large;
+}
+
+a {
+    cursor: pointer;
+}
+
+input {
+    cursor: pointer;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido - Pasteleria San Juan</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="icon" href="./img/San Juan.icon">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pedido.html">Pedido</a></li>
+            <li><a href="registro.html">Inventario</a></li>
+        </ul>
+    </nav>
+
+        <div>
+            <h1>Pasteleria San Juan</h1>
+            <img src="./img/frase.png" alt="Pasteleria San Juan">
+        </div>
+
+        <h2>Llene el siguiente formulario para enviar su pedido</h2>
+
+        <form action="./accion.js">
+
+            <label for="nombre1">Agregue su nombre:</label> <br> 
+            <input type="text" id="nombre1" name="nombre1" placeholder="Ejemplo:Juan">
+            
+            <br> <br>
+
+            <label for="tel1">Telefono</label> <br>
+            <input type="number" name="tel1" id="tel1" maxlength="10" placeholder="978-273-64-51">
+
+            <br> <br>
+
+            <label for="correo1">Correo Electronico</label> <br>
+            <input type="email" id="correo1" name="correo1" placeholder="correo.correo.com"> 
+
+            <br> <br>
+
+            <label for="direction">Dirección:</label> <br>
+            <input type="text" id="direction" name="direction">
+
+            <br>
+
+            <label for="fecha">Fecha de entrega (Seleccione unas horas antes de que desee su entrega):</label> <br>
+            <input type="datetime-local" name="fecha" id="fecha">
+
+            <br>
+
+            <h2>Descripción de su pastel</h2> 
+
+            <label for="description">Descripcion del pastel (Describa como quiere que se le integren sus adornos a su pastel):</label> <br>
+            <input type="text" id="description" name="description" placeholder="Caracteristicas">
+
+            <br> <br>
+
+            <label for="cantidad">Cantidad de pasteles</label> <br>
+            <input type="number" id="cantidad" name="cantidad">
+
+                <h2>Selecione su pastel</h2>
+            <label for="pastel1">Pastel</label>
+            <select id="pastel1" name="pastel1">
+                <option value="moka">Moka</option>
+                <option value="cajeta">Cajeta</option>
+                <option value="fresa">Fresa</option>
+                <option value="durazno">Durazno</option>
+                <option value="chocolateconmenta">Chocolate con menta</option>
+                <option value="trufa">Trufa</option>
+                <option value="rompope">Rompope</option>
+                <option value="marmoleado">Marmoleado</option>
+                <option value="fresasconchocolate">Fresas con chocolate</option>
+                <option value="frutosrojos">Frutos rojos</option>
+                <option value="xocalaa">Xocolaa</option>
+                <option value="crujientedeavellana">Crujiente de avellana</option>
+                <option value="manzana">Manzana</option>
+            </select>
+
+            <br> 
+
+                <h2>Convinación</h2>
+            <label for="pastel1">Pastel (Si elije convinacion, su pastel tendra una mitad de cada uno que elija)</label>
+            <select id="pastel1" name="pastel1">
+                <option value="none">Solo un opción</option>
+                <option value="moka">Moka</option>
+                <option value="cajeta">Cajeta</option>
+                <option value="fresa">Fresa</option>
+                <option value="durazno">Durazno</option>
+                <option value="chocolateconmenta">Chocolate con menta</option>
+                <option value="trufa">Trufa</option>
+                <option value="rompope">Rompope</option>
+                <option value="marmoleado">Marmoleado</option>
+                <option value="fresasconchocolate">Fresas con chocolate</option>
+                <option value="frutosrojos">Frutos rojos</option>
+                <option value="xocalaa">Xocolaa</option>
+                <option value="crujientedeavellana">Crujiente de avellana</option>
+                <option value="manzana">Manzana</option>
+            </select>
+
+            <br>
+
+            <h2>Adornos:</h2>
+            <label for="adornos">Seleccione sus adornos:</label>
+            <select name="adornos" id="adornos">
+                <option value="chsipas">Chispas de chocolate</option>
+                <option value="fresas">Fresas</option>
+                <option value="chocolate">Chocolate derretido</option>
+                <option value="emanems">Emanems</option>
+            </select>
+
+            <h2>Convinación</h2>
+            <label for="adornos2">Seleccione el adorno para su convinación</label>
+            <select name="adornos2" id="adornos2">
+                <option value="none">Solo una opción</option>
+                <option value="chsipas">Chispas de chocolate</option>
+                <option value="fresas">Fresas</option>
+                <option value="chocolate">Chocolate derretido</option>
+                <option value="emanems">Emanems</option>
+            </select>
+            <br> <br>
+
+                <input type="reset" name="reset1" id="reset1">
+                <input type="submit" value="Enviar" name="enviar" id="enviar" onclick="alert('Su pedido se ha enviado');"> <br> <br>
+
+        </form>
+
+</body>
+</html>
